@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website Time Tracker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="top-nav">
+        <h1>Website Time Tracker</h1>
+        <div class="nav-buttons">
+          <button id="homeButton">Home</button>
+          <button id="settingsButton">Settings</button>
+          <button id="domainsButton">Domains</button>
+        </div>
+      </nav>
+      <div id="settingsMenu" style="display: none;">
+        <h2>Add Domain</h2>
+        <div class="input-group">
+          <input type="text" id="domainInput" placeholder="Enter domain (e.g., example.com)" />
+          <button id="addDomainButton">Add</button>
+        </div>
+        <h2>Reset Data</h2>
+        <button id="resetButton" class="reset-button">Reset All Data</button>
+      </div>
+      <div id="domainsMenu" style="display: none;">
+        <h2>Tracked Domains</h2>
+        <ul id="domainList"></ul>
+      </div>
+      <ul id="timeList" style="display: block;"></ul>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
